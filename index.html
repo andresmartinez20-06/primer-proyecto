@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSIMPORTS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="stylestore.css">
+</head>
+<body>
+    <header>
+        <h1>MSIMPORTS</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a MSIMPORTS</h2>
+            <p>En MSIMPORTS, nos enorgullece ofrecer una selección exclusiva de productos importados de alta calidad que satisfacen tus necesidades y superan tus expectativas. Desde la última tecnología en gadgets hasta artículos de moda innovadores, nuestro catálogo está cuidadosamente curado para brindarte lo mejor en cada categoría.</p>
+        <body-store>
+            <header>
+                <h1>Tienda Online</h1>
+                <input type="text" id="search-bar" placeholder="Buscar productos...">
+            </header>
+            
+            <main1>
+                <section id="product-categories">
+                    <h2>Categorías</h2>
+                    <div class="category" data-category="all">Todos</div>
+                    <div class="category" data-category="categoria1">Electronico</div>
+                    <div class="category" data-category="categoria2">Limpieza</div>
+                    <div class="category" data-category="categoria3">Ciclismo</div>
+                    <!-- Añadir más categorías si es necesario -->
+                </section>
+                    <h2>Productos</h2>
+                    <section class="product-list">
+                    <div class="product" data-name="Colchon doble" data-price="100.000" data-category="categoria1">
+                        <figure>
+                        <img src="img/colchon.jpg" alt="Producto 1">
+                        </figure>
+                        <h3>Colchon doble</h3>
+                        <p>Colchon inflable 193*137*22 cm</p>
+                        <p>Precio: $100.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <div class="product" data-name="Cepillo para mascotas" data-price="20.000" data-category="categoria2">
+                        <figure>
+                        <img src="img/cepillos.jpg" alt="Producto 2">
+                        </figure>
+                        <h3>Cepillo para mascotas</h3>
+                        <p>Cepillo de vapor en goma</p>
+                        <p>Precio: $20.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <div class="product" data-name="Cinta de manillar de bicicleta" data-price="30.000" data-category="categoria3">
+                        <figure>
+                        <img src="img/cinta.jpg" alt="Producto 3">
+                        </figure>
+                        <h3>Cinta de manillar</h3>
+                        <p>Cintas multicolor</p>
+                        <p>Precio: $30.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <div class="product" data-name="Calas de bicicleta" data-price="40.000" data-category="categoria3">
+                        <figure>
+                        <img src="img/cala.jpg" alt="Producto 3">
+                        </figure>
+                        <h3>Calas Shimanu</h3>
+                        <p>Calas para bicicleta</p>
+                        <p>Precio: $40.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <div class="product" data-name="pasta termica" data-price="25.000" data-category="categoria1">
+                        <figure>
+                        <img src="img/pasta.jpg" alt="Producto 3">
+                        </figure>
+                        <h3>Pasta termica</h3>
+                        <p>Cintas multicolor</p>
+                        <p>Precio: $25.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <div class="product" data-name="Cinta de manillar" data-price="30.000" data-category="categoria3">
+                        <figure>
+                        <img src="img/cinta.jpg" alt="Producto 3">
+                        </figure>
+                        <h3>Cinta de manillar</h3>
+                        <p>Cintas multicolor</p>
+                        <p>Precio: $30.000</p>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart">Agregar al carrito</button>
+                    </div>
+                    <!-- Añadir más productos según sea necesario -->
+                </section>
+        
+                <aside id="shopping-cart">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="total-price">0</span></p>
+                    <button id="checkout">Pagar</button>
+                </aside>
+            </main1>
+        
+            <script src="scripts.js"></script>
+        </body-store>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2>¿Por qué elegir MSIMPORTS?</h2>
+            <p>Calidad Garantizada: Trabajamos directamente con proveedores internacionales para asegurar que cada producto que ofrecemos cumpla con los estándares más. </p>
+            <p>Variedad y Exclusividad: Encuentra artículos únicos que no encontrarás en tiendas locales. Nuestra selección abarca desde electrónicos avanzados hasta moda y accesorios únicos. </p>
+            <p>Compra Segura: Tu seguridad es nuestra prioridad. Ofrecemos un proceso de compra sencillo y seguro para que puedas adquirir tus productos con total confianza. </p>
+            <p>Servicio al Cliente Dedicado: Nuestro equipo está aquí para asistirte en cada paso del camino, desde la selección de productos hasta el postventa. </p>
+            <p>Explora nuestra tienda y descubre todo lo que MSIMPORTS tiene para ofrecerte. ¡Comienza a comprar hoy mismo y experimenta la diferencia de calidad y servicio!</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos una amplia gama de servicios adaptados a tus necesidades, incluyendo desarrollo web, consultoría y más.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <form action="datos">
+        <data value="name">idk</data>
+    </form>
+</body>
+</html>
